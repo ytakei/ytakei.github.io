@@ -3,10 +3,73 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ytakei</title>
-<meta http-equiv="refresh" content="0; url=sift-app/">
+<title>Sift – 個人用メールアプリ / personal mail app</title>
+<meta name="description" content="Sift is a personal email app for Mac, Windows and Android. Mail is handled only on your own device.">
+<style>
+  :root { --fg: #1f2421; --muted: #5c6660; --bg: #fff; --link: #15803d; --line: #e3e7e4; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #e6e9e7; --muted: #9aa39e; --bg: #121513; --link: #4ade80; --line: #2a302c; } }
+  body { margin: 0; font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Segoe UI", sans-serif; color: var(--fg); background: var(--bg); }
+  main { max-width: 700px; margin: 0 auto; padding: 36px 16px 56px; }
+  h1 { font-size: 28px; margin: 0; }
+  h2 { font-size: 17px; margin: 28px 0 6px; }
+  .tag { color: var(--muted); margin: 2px 0 18px; }
+  section + section { border-top: 1px solid var(--line); margin-top: 32px; padding-top: 8px; }
+  a { color: var(--link); }
+  code { font-size: 14px; }
+  ul { padding-left: 22px; }
+</style>
 </head>
 <body>
-<p><a href="sift-app/">Sift – 個人用メールアプリ / personal mail app</a></p>
+<main>
+  <h1>Sift</h1>
+  <p class="tag">個人用メールアプリ（Mac・Windows・Android） — a personal email app</p>
+
+  <p><a href="privacy.html">プライバシーポリシー / Privacy Policy</a></p>
+
+  <section lang="ja">
+    <h2>Sift でできること</h2>
+    <p>Sift は、複数のメールアカウント（Gmail、会社やプロバイダのメールなど）をまとめて読み書きするメールアプリです。</p>
+    <ul>
+      <li>メールの受信・表示・検索・送信（IMAP・SMTP・POP）</li>
+      <li>迷惑メールやメールマガジンの振り分け</li>
+      <li>返信が必要なメールのお知らせと、返信忘れのリマインド</li>
+      <li>いつも届くはずのメールが届かないときのお知らせ</li>
+    </ul>
+    <h2>Gmail の使い方</h2>
+    <p>「Google でログイン」で Gmail を追加すると、Sift は Google に Gmail へのアクセス（<code>https://mail.google.com/</code>）を求めます。メールアプリが IMAP と SMTP で Gmail に接続するのに必要な権限は、これだけです。Sift はこの権限を、次のことだけに使います。</p>
+    <ul>
+      <li>メールを端末に取り込んで表示する</li>
+      <li>あなたが操作したとおりに、既読・フラグ・移動・迷惑メール・削除を Gmail に反映する</li>
+      <li>あなたが書いたメールを送信する</li>
+      <li>アカウントの設定のため、Gmail のアドレスと差出人名を読む</li>
+    </ul>
+    <p>メールは、あなたの端末の中の Sift だけが扱います。開発者のサーバーはなく、メールやアカウントの情報を開発者や第三者に送ることはありません。</p>
+  </section>
+
+  <section lang="en">
+    <h2>What Sift does</h2>
+    <p>Sift is an email client that reads and sends mail from several accounts in one place (Gmail, company and provider mailboxes).</p>
+    <ul>
+      <li>Receives, shows, searches and sends mail (IMAP, SMTP, POP)</li>
+      <li>Sorts out spam and newsletters</li>
+      <li>Points out mail that needs a reply, and reminds you of unanswered mail</li>
+      <li>Tells you when mail that usually arrives has not come</li>
+    </ul>
+    <h2>How Sift uses Gmail</h2>
+    <p>When you add a Gmail account with “Sign in with Google”, Sift asks Google for access to Gmail (<code>https://mail.google.com/</code>). This is the only permission that lets a mail app connect to Gmail over IMAP and SMTP. Sift uses it only to:</p>
+    <ul>
+      <li>download your mail to your device and show it to you,</li>
+      <li>apply what you do in Sift (read, flag, move, mark as spam, delete) to your Gmail,</li>
+      <li>send the mail you write,</li>
+      <li>read your Gmail address and sender name to set up the account.</li>
+    </ul>
+    <p>Your mail is handled only by Sift on your own device. There is no developer server; mail and account data are never sent to the developer or to third parties.</p>
+  </section>
+
+  <section>
+    <h2>お問い合わせ / Contact</h2>
+    <p><a href="https://github.com/ytakei/sift-app/issues">GitHub Issues</a></p>
+  </section>
+</main>
 </body>
 </html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー / Privacy Policy – Sift</title>
+<style>
+  :root { --fg: #1f2421; --muted: #5c6660; --bg: #fff; --link: #15803d; --line: #e3e7e4; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #e6e9e7; --muted: #9aa39e; --bg: #121513; --link: #4ade80; --line: #2a302c; } }
+  body { margin: 0; font: 15px/1.8 -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Segoe UI", sans-serif; color: var(--fg); background: var(--bg); }
+  main { max-width: 700px; margin: 0 auto; padding: 36px 16px 56px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  h2 { font-size: 16px; margin: 24px 0 4px; }
+  .muted { color: var(--muted); font-size: 14px; }
+  section + section { border-top: 1px solid var(--line); margin-top: 36px; padding-top: 4px; }
+  a { color: var(--link); }
+  code { font-size: 13.5px; word-break: break-all; }
+  ul { padding-left: 22px; }
+</style>
+</head>
+<body>
+<main>
+  <p class="muted"><a href="./">Sift</a> ・ 2026年9月28日 / September 28, 2026</p>
+
+  <section lang="ja">
+    <h1>プライバシーポリシー</h1>
+    <p>Sift（以下「Sift」）は、個人の開発者が作った個人用のメールアプリです。このページでは、Sift が扱うデータ、とくに Google アカウントから受け取るデータの扱いを説明します。</p>
+
+    <h2>1. Google から受け取るデータ</h2>
+    <ul>
+      <li>Gmail のメールとフォルダ（ラベル）。権限 <code>https://mail.google.com/</code> を使い、IMAP で受信・整理し、SMTP で送信します。</li>
+      <li>Gmail のアドレスと差出人名（Gmail API の <code>users.getProfile</code> と <code>users.settings.sendAs.list</code>）。アカウントの設定に使います。</li>
+      <li>ログインの情報（アクセス トークンとリフレッシュ トークン）。</li>
+    </ul>
+
+    <h2>2. データの使い方</h2>
+    <p>受け取ったデータは、あなたが使うメールの機能のためだけに使います。メールの表示・検索、迷惑メールやメールマガジンの振り分け、返信が必要なメールのお知らせ、あなたが操作した既読・フラグ・移動・削除の Gmail への反映、あなたが書いたメールの送信です。振り分けは、あなたの端末の中で行います。広告には使いません。</p>
+
+    <h2>3. 保存</h2>
+    <p>メールのコピーは、あなたの端末の中にある Sift のデータベースに保存します。ログインの情報は暗号化して保存します。開発者のサーバーはなく、開発者がデータを受け取ることはありません。利用状況の送信（アクセス解析）もしません。</p>
+
+    <h2>4. 第三者への提供</h2>
+    <p>Sift は、Google から受け取ったデータを第三者に渡しません。ただし、次の機能をあなたがオンにした場合に限り、それぞれの相手にデータが送られます（どれも最初はオフです）。</p>
+    <ul>
+      <li><b>AI（Claude）</b>：メールの差出人・件名・本文（最大 6,000 文字）を Anthropic 社の Claude に送り、振り分けと要約に使います。あなた自身の Anthropic の API キー、またはあなた自身の Claude Code のログインを使います。</li>
+      <li><b>スマホのブラウザへの通知</b>：通知の内容（差出人と件名）を、ブラウザの通知サービス（Apple・Google・Mozilla）を経由して送ります。内容は暗号化されていて、通知サービスは読めません。</li>
+      <li><b>ntfy による通知</b>：通知の内容（差出人と件名）を、あなたが設定した ntfy のサーバーに送ります。</li>
+      <li><b>ほかの端末からの利用</b>：同じネットワークにあるあなたの端末（スマホなど）を Sift とつなぐと、その端末にメールを表示します。</li>
+    </ul>
+    <p>Google から受け取ったデータを、汎用の AI・機械学習モデルの開発・改善・学習に使うことはありません。</p>
+    <p>Sift による Google API から受け取った情報の使用と他のアプリへの転送は、<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API サービスのユーザーデータに関するポリシー</a>（限定的使用の要件を含む）に従います。</p>
+
+    <h2>5. 削除</h2>
+    <p>Sift からアカウントを削除すると、その端末に保存したメールのコピーとログインの情報も削除します（Gmail のサーバーのメールは消えません）。Sift へのアクセスは、いつでも <a href="https://myaccount.google.com/permissions">Google アカウントの「サードパーティ製のアプリとサービス」</a>から取り消せます。</p>
+
+    <h2>6. 変更とお問い合わせ</h2>
+    <p>このポリシーを変えるときは、このページを更新します。お問い合わせは <a href="https://github.com/ytakei/sift-app/issues">GitHub Issues</a> へどうぞ。</p>
+  </section>
+
+  <section lang="en">
+    <h1>Privacy Policy</h1>
+    <p>Sift is a personal email app made by an individual developer. This page explains what data Sift handles, in particular the data it receives from Google accounts.</p>
+
+    <h2>1. Data Sift receives from Google</h2>
+    <ul>
+      <li>Your Gmail messages and folders (labels), using the scope <code>https://mail.google.com/</code>: mail is received and organized over IMAP and sent over SMTP.</li>
+      <li>Your Gmail address and sender name (Gmail API <code>users.getProfile</code> and <code>users.settings.sendAs.list</code>), to set up the account.</li>
+      <li>Sign-in tokens (access and refresh tokens).</li>
+    </ul>
+
+    <h2>2. How Sift uses the data</h2>
+    <p>Only for the email features you use: showing and searching your mail; sorting out spam and newsletters; pointing out mail that needs a reply; applying what you do (read, flag, move, delete) to your Gmail; and sending the mail you write. Sorting runs on your device. The data is not used for advertising.</p>
+
+    <h2>3. Storage</h2>
+    <p>Copies of your mail are stored in Sift’s database on your own device. Sign-in tokens are stored encrypted. There is no developer server, and the developer never receives your data. Sift sends no analytics.</p>
+
+    <h2>4. Sharing</h2>
+    <p>Sift does not share data received from Google with third parties, except when you turn on one of these optional features (all are off by default):</p>
+    <ul>
+      <li><b>AI (Claude)</b>: the sender, subject and body (up to 6,000 characters) of a mail are sent to Anthropic’s Claude to sort and summarize it, using your own Anthropic API key or your own Claude Code sign-in.</li>
+      <li><b>Notifications to a phone’s browser</b>: the notification (sender and subject) is delivered through the browser’s push service (Apple, Google or Mozilla), end-to-end encrypted so the push service cannot read it.</li>
+      <li><b>ntfy notifications</b>: the notification (sender and subject) is sent to the ntfy server you set up.</li>
+      <li><b>Your other devices</b>: when you connect your own device (such as a phone) on the same network to Sift, your mail is shown on that device.</li>
+    </ul>
+    <p>Google user data is not used to develop, improve or train generalized AI or machine-learning models.</p>
+    <p>Sift’s use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+    <h2>5. Deletion</h2>
+    <p>Removing an account from Sift deletes the copies of its mail and its sign-in tokens from that device (mail on the Gmail server is not touched). You can revoke Sift’s access at any time at <a href="https://myaccount.google.com/permissions">your Google Account’s third-party apps page</a>.</p>
+
+    <h2>6. Changes and contact</h2>
+    <p>Changes to this policy will be posted on this page. Contact: <a href="https://github.com/ytakei/sift-app/issues">GitHub Issues</a>.</p>
+  </section>
+</main>
+</body>
+</html>
